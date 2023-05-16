@@ -1,0 +1,24 @@
+{% load static %} 
+{% extends 'base.html' %}
+{% block content %}인덱스{% endblock %}
+
+{% block content %}
+<main>
+    <div class="card-list">
+        <p> 다음에 </p>
+    </div>
+    <div>
+        <nav>
+            <ul class="bottom-menu-group">
+            <li>
+                <image src="{% static 'icons/home_FILL0_wght400_GRAD0_opsz48.svg'}" alt="홈">
+            </li>
+            <li>검색</li>
+            <li>글쓰기</li>
+            <li>좋아요</li>
+            <li>프로필</li>
+            </ul>
+        </nav>
+    </div>
+</main>
+{% endblock %}
